@@ -1,0 +1,4 @@
+GET / 200 17 - 5.862 ms
+GET /get-users 200 18 - 0.909 ms
+PUT /user/1 201 22 - 1.236 ms
+PUT /user/1 201 22 - 4.509 ms Date: Fri, 19 Jul 2024 17:00:35 GMT HTTP Version: 1.1
