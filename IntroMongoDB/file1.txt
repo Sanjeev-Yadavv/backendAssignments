@@ -1,0 +1,35 @@
+1. What is a NoSQL Database, and explain the types of NoSQL database?
+ANS: A NoSQL database stores data in formats other than tabular relations. Types: Document-based, Key-Value, Column-based, Graph-based.
+
+2. What is the difference between SQL and NoSQL databases?
+ANS: SQL: relational, fixed schema, ACID transactions. NoSQL: non-relational, flexible schema, horizontal scalability, BASE properties.
+
+3. How to choose between MongoDB and MySQL based on your requirements?
+ANS: Choose MongoDB for scalability, flexible schema, and unstructured data. Choose MySQL for ACID compliance, complex queries, and structured data.
+
+4. What are collections and documents in a MongoDB database?
+ANS: Collections are groupings of documents. Documents are JSON-like records in a collection.
+
+5. What is BSON? What is the difference between BSON and JSON?
+ANS: BSON (Binary JSON) is a binary format for JSON-like documents, supporting more data types and faster parsing.
+
+6. What are MongoDB Compass and MongoDB Shell used for?
+ANS: Compass: GUI for exploring and managing data. Shell: Command-line interface for interacting with MongoDB.
+
+7. How to create collections in MongoDB?
+ANS: Implicitly created when a document is inserted. Explicitly with `db.createCollection("myCollection")`.
+
+8. What is the difference between insertMany and insertOne?
+ANS: `insertOne`: Inserts one document. `insertMany`: Inserts multiple documents.
+
+9. What is the difference between deleteOne and deleteMany?
+ANS: `deleteOne`: Deletes one matching document. `deleteMany`: Deletes all matching documents.
+
+10. How to read data in MongoDB? What is the difference between find and findOne?
+ANS: `find`: Retrieves multiple documents. `findOne`: Retrieves one document.
+
+11. What is $set in MongoDB?
+ANS: `$set` updates the value of a field in a document. Adds the field if it doesn't exist.
+
+12. How to filter data using MongoDB?
+ANS: Use `find` with query operators, e.g., `db.collection.find({ age: { $gte: 25 } })`.
