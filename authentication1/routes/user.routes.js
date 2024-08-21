@@ -23,7 +23,7 @@ userRouter.post('/login', async(req,res)=>{
         if(!getUser){
             return (res.send('please check your details carefully'))
         }
-        const token = jwt.sign({name: getUser.name, role: getUser.role}, 'masai')
+        const token = jwt.sign({name: getUser.name, role: getUser.role}, 'masai',{expiresIn: '1h'})
         res.status(200).json({message: 'user login successfully', getUser,token})
     } catch (error) {
         console.log(error)
